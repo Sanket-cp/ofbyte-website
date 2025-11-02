@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "supabase/functions/*/index.ts": {
+      "runtime": "edge"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

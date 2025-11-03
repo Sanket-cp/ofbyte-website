@@ -22,7 +22,7 @@ const Projects = () => {
       description: "Professional logo designs and brand identity solutions for various clients and industries",
       image: project2,
       tags: ["Logo Design", "Brand Identity", "Adobe Illustrator", "Figma"],
-      demoUrl: "public/Demo Posters & Logos _20251103_112451_0000.pdf",
+      demoUrl: "Demo Posters & Logos _20251103_112451_0000.pdf",
       githubUrl: ""
     },
     {

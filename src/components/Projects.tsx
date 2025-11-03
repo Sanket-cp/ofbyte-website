@@ -18,11 +18,11 @@ const Projects = () => {
       githubUrl: ""
     },
     {
-      title: "Creative Design & Content Portfolio",
-      description: "Professional branding, video editing, and content writing services for diverse clients",
+      title: "Logo Design Portfolio",
+      description: "Professional logo designs and brand identity solutions for various clients and industries",
       image: project2,
-      tags: ["Logo Design", "Video Editing", "Content Writing", "Brand Identity"],
-      demoUrl: "https://behance.net/yourportfolio",
+      tags: ["Logo Design", "Brand Identity", "Adobe Illustrator", "Figma"],
+      demoUrl: "public/Demo Posters & Logos _20251103_112451_0000.pdf",
       githubUrl: ""
     },
     {

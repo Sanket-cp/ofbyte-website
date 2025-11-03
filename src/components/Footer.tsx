@@ -25,8 +25,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-background to-card border-t border-accent/10">
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Brand */}
           <div>
             <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">

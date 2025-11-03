@@ -172,3 +172,100 @@ All colors MUST be HSL.
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
+/* Mobile Responsiveness Improvements */
+@layer utilities {
+  /* Better touch targets for mobile */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improved text scaling for mobile */
+  .text-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  }
+  
+  .heading-responsive {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+  
+  /* Better spacing for mobile */
+  .container-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container-mobile {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container-mobile {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Improved animations for mobile */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-scale-in,
+    .animate-slide-up {
+      animation: none;
+    }
+  }
+  
+  /* Better hover states for touch devices */
+  @media (hover: none) {
+    .hover\:scale-110:hover {
+      transform: scale(1.05);
+    }
+    
+    .hover\:-translate-y-2:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+/* Mobile-first responsive breakpoints */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Reduce excessive animations on mobile */
+  .animate-pulse-gentle {
+    animation-duration: 3s;
+  }
+  
+  .animate-bounce-subtle {
+    animation-duration: 3s;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small mobile adjustments */
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  
+  .py-24 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .py-16 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

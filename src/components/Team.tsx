@@ -5,7 +5,7 @@ const Team = () => {
   const { elementRef, isVisible } = useScrollAnimation();
   const teamStats = [
     { icon: Users, label: "Team Members", value: "14+", description: "Expert Professionals" },
-    { icon: Award, label: "Years Experience", value: "3+", description: "Average per Member" },
+    { icon: Award, label: "Years Experience", value: "2+", description: "Average per Member" },
     { icon: Code, label: "Technologies", value: "15+", description: "Modern Tech Stack" },
     { icon: Briefcase, label: "Projects Completed", value: "25+", description: "Successful Deliveries" }
   ];
@@ -13,11 +13,11 @@ const Team = () => {
   const developers = [
     {
       name: "Sanket Debnath",
-      role: "Team Lead & Full-Stack Developer",
+      role: "Full-Stack Developer & Content Writer",
       experience: "2+ years",
-      education: "B.E. Computer Science",
+      education: "B.Tech CSE",
       projects: "10+ projects",
-      skills: ["React", "Node.js", "JavaScript", "MongoDB"]
+      skills: ["React", "Node.js", "JavaScript", "Content Writing"]
     },
     {
       name: "Pradipta Dutta",
@@ -29,40 +29,40 @@ const Team = () => {
     },
     {
       name: "Agnivo Ghosh",
-      role: "Designer & Video Editor",
+      role: "Designer & Video Editor & SEO",
       experience: "2+ years",
-      education: "B.A. Graphic Design",
+      education: "B.Tech CSE",
       projects: "15+ projects",
-      skills: ["Figma", "Photoshop", "Premiere Pro", "After Effects"]
+      skills: ["Figma", "Photoshop", "SEO Writing", "After Effects"]
     },
     {
       name: "Mrinal Keshav",
-      role: "Content Writer & SEO",
+      role: "Frontend Developer",
       experience: "2+ years",
-      education: "B.A. English Literature",
-      projects: "20+ projects",
-      skills: ["SEO Writing", "Blog Posts", "Social Media", "Copywriting"]
+      education: "B.Tech CSE",
+      projects: "8+ projects",
+      skills: ["React", "JavaScript", "HTML/CSS", "UI/UX"]
     }
   ];
 
   return (
     <section id="team" className="py-24 bg-gradient-to-b from-muted/20 to-background">
       <div ref={elementRef} className="container mx-auto px-6">
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Our <span className="bg-gradient-accent bg-clip-text text-transparent">Expert Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 md:px-0">
             Meet our core team members leading a group of 14+ skilled professionals specializing in development, design, and content creation
           </p>
         </div>
 
         {/* Team Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
           {teamStats.map((stat, index) => (
             <div
               key={index}
-              className={`p-6 rounded-2xl bg-gradient-card backdrop-blur-sm border border-accent/20 text-center hover:shadow-glow-blue transition-all duration-500 hover:-translate-y-2 hover:scale-110 ${
+              className={`p-4 md:p-6 rounded-2xl bg-gradient-card backdrop-blur-sm border border-accent/20 text-center hover:shadow-glow-blue transition-all duration-500 hover:-translate-y-2 hover:scale-105 md:hover:scale-110 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ 
@@ -71,13 +71,13 @@ const Team = () => {
                 animationDelay: `${index * 0.3}s`
               }}
             >
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="w-6 h-6 text-accent" />
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center mx-auto mb-3 md:mb-4">
+                <stat.icon className="w-5 h-5 md:w-6 md:h-6 text-accent" />
               </div>
-              <div className="text-3xl font-bold mb-2 bg-gradient-accent bg-clip-text text-transparent">
+              <div className="text-2xl md:text-3xl font-bold mb-1 md:mb-2 bg-gradient-accent bg-clip-text text-transparent">
                 {stat.value}
               </div>
-              <div className="text-sm font-medium mb-1">{stat.label}</div>
+              <div className="text-xs md:text-sm font-medium mb-1">{stat.label}</div>
               <div className="text-xs text-muted-foreground">{stat.description}</div>
             </div>
           ))}

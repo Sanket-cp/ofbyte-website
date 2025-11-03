@@ -61,16 +61,16 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Let's Build <span className="bg-gradient-accent bg-clip-text text-transparent">Something Amazing</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 md:px-0">
             Have a project in mind? Get in touch and let's discuss how we can bring your vision to life
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <div className="animate-scale-in">
             <form onSubmit={handleSubmit} className="space-y-6">

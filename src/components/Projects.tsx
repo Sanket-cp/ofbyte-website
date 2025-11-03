@@ -47,17 +47,17 @@ const Projects = () => {
     <section id="projects" className="py-24 relative" style={{ background: 'linear-gradient(to bottom, hsl(var(--background)), hsl(var(--muted) / 0.2))' }}>
       <div className="absolute inset-0 opacity-25" style={{ background: 'var(--gradient-mesh)' }} />
       <div ref={elementRef} className="container mx-auto px-6 relative z-10">
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className={`text-center mb-12 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Our <span className="bg-gradient-accent bg-clip-text text-transparent">Latest Work</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 md:px-0">
             Explore our portfolio of innovative projects that showcase our expertise 
             in web development, mobile apps, and game creation
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}

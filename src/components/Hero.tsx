@@ -93,20 +93,20 @@ const Hero = () => {
               <span className="text-sm font-medium text-primary">Innovative Software Solutions</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-8 leading-tight tracking-tight animate-slide-up">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6 lg:mb-8 leading-tight tracking-tight animate-slide-up">
               OFBYTE
               <br />
-              <span className="text-primary animate-color-shift">Building digital experiences — from code to creativity.</span>
+              <span className="text-primary animate-color-shift text-2xl sm:text-3xl md:text-5xl lg:text-7xl">Building digital experiences — from code to creativity.</span>
             </h1>
             
-            <p className="text-base md:text-xl lg:text-2xl text-slate-300 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-slate-300 mb-6 md:mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               Ofbyte builds powerful web apps, mobile apps, games, AI tools, creates stunning videos, and crafts compelling content for businesses around the world.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-2 sm:px-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-primary hover:bg-primary/90 text-primary-foreground group animate-pulse-gentle"
+                className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 lg:py-6 bg-primary hover:bg-primary/90 text-primary-foreground group animate-pulse-gentle"
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Our Work
@@ -115,18 +115,16 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 border-primary/30 hover:bg-primary/10 hover:border-primary animate-pulse-gentle"
+                className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 lg:py-6 border-primary/30 hover:bg-primary/10 hover:border-primary animate-pulse-gentle"
                 style={{ animationDelay: '0.1s' }}
-                asChild
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <a href="mailto:Ofbyteind@gmail.com">
-                  Contact Us
-                </a>
+                Contact Us
               </Button>
             </div>
 
             {/* Stats with enhanced animations */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 md:gap-8 mt-8 md:mt-12 lg:mt-16 px-2">
               {[
                 { value: '25+', label: 'Projects Delivered' },
                 { value: '15+', label: 'Happy Clients' },
@@ -135,13 +133,13 @@ const Hero = () => {
               ].map((stat, i) => (
                 <div 
                   key={i} 
-                  className="animate-scale-in p-4 hover:scale-110 transition-transform duration-300 cursor-pointer group"
+                  className="animate-scale-in p-2 sm:p-3 md:p-4 hover:scale-105 md:hover:scale-110 transition-transform duration-300 cursor-pointer group"
                   style={{ animationDelay: `${i * 0.1}s` }}
                 >
-                  <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-2 group-hover:animate-bounce">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1 sm:mb-2 group-hover:animate-bounce">
                     {stat.value}
                   </div>
-                  <div className="text-xs md:text-sm text-slate-400 group-hover:text-slate-300 transition-colors">
+                  <div className="text-xs sm:text-sm md:text-base text-slate-400 group-hover:text-slate-300 transition-colors leading-tight">
                     {stat.label}
                   </div>
                 </div>

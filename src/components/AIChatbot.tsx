@@ -162,7 +162,7 @@ const AIChatbot = () => {
                 <Sparkles className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">ORBYTE AI</h3>
+                <h3 className="font-bold text-foreground">OFBYTE AI</h3>
                 <p className="text-xs text-muted-foreground">Online • Ready to help</p>
               </div>
             </div>

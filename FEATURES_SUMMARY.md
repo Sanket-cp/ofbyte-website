@@ -12,7 +12,7 @@
 - **Functionality**: Real-time AI chat using OpenAI API
 - **Features**: 
   - Streaming responses
-  - Professional UI with ORBYTE AI branding
+  - Professional UI with OFBYTE AI branding
   - Error handling for rate limits and API issues
   - Conversation history within session
 

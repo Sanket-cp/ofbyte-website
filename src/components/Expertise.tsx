@@ -67,7 +67,7 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="py-24 relative bg-background">
+    <section id="services" className="py-24 relative bg-background">
       <div className="absolute inset-0 opacity-20" style={{ background: 'var(--gradient-mesh)' }} />
       <div ref={elementRef} className="container mx-auto px-6 relative z-10">
         <div className={`text-center mb-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

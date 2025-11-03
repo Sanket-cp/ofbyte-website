@@ -28,12 +28,12 @@ const Team = () => {
       skills: ["Python", "TensorFlow", "AWS", "Docker"]
     },
     {
-      name: "Agnivo Ghosh",
-      role: "Designer & Video Editor & SEO",
+      name: "Agniva Ghosh",
+      role: "Designer & Video Editor",
       experience: "2+ years",
       education: "B.Tech CSE",
       projects: "15+ projects",
-      skills: ["Figma", "Photoshop", "SEO Writing", "After Effects"]
+      skills: ["Figma", "Photoshop", "CapCut", "Canva"]
     },
     {
       name: "Mrinal Keshav",

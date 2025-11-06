@@ -27,12 +27,17 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification to company email
     const emailResponse = await resend.emails.send({
-      from: "OFBYTE Contact <noreply@ofbyte.dev>",
+      from: "OFBYTE Contact Form <onboarding@resend.dev>",
       to: ["Ofbyteind@gmail.com"],
-      subject: `New Contact Form: ${subject}`,
+      replyTo: email, // User's email for direct reply
+      subject: `🔔 OFBYTE Contact Form: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #1e1b4b; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">New Contact Form Submission</h2>
+          <div style="background: #1e1b4b; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
+            <h1 style="margin: 0; font-size: 24px;">OFBYTE</h1>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">New Contact Form Submission</p>
+          </div>
+          <h2 style="color: #1e1b4b; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-top: 0;">📧 New Message Received</h2>
           <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <p><strong>From:</strong> ${name}</p>
             <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
